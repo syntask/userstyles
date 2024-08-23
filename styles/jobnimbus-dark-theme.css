@@ -1,0 +1,533 @@
+@-moz-document domain("webappui.jobnimbus.com") {
+/* Boards UI enhancements */
+
+.board{
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.board:hover{
+    transform: scale(1.02)
+}
+
+/* Block Sunlight Financial ads */
+
+#sunlightFinancialApplicationcontact{
+    display: none !important;
+}
+
+/* Navbar UI enhancements */
+
+#MainBody{
+    padding-top: 56px;
+    
+}
+
+@media only screen and (max-width: 952px) {
+    #MainBody{
+        padding-top: 119px;
+
+    }
+}
+
+/* Dark mode */
+
+:root{
+    --sf-background: #000;
+    --sf-background-secondary: #111;
+    --sf-background-tertiary: #181818;
+    --sf-background-quaternary: #222;
+    --sf-foreground: #FFF;
+    --sf-accent: #0092FF;
+    --sf-border: #222;
+}
+
+/* Text */
+body{
+    background: var(--sf-background);
+    color: var(--sf-foreground);
+}
+
+.span_big_title{
+    color: var(--sf-foreground);
+}
+
+.span_subheader{
+    color: var(--sf-foreground);
+}
+
+/* Links */
+
+a {
+    color: var(--sf-accent) !important;
+}
+
+/* Round images */
+.ImageResize{
+    border-radius: 8px;
+}
+
+/* Backgrounds */
+
+#divMainObjects{
+    background: var(--sf-background);
+}
+
+.hoverShowContainer{
+    background: var(--sf-background-tertiary);
+    color: var(--sf-foreground);
+    border: none;
+    padding: 12px;
+}
+
+.k-tabstrip-items{
+    background: var(--sf-background);
+}
+
+.k-item{
+    background: var(--sf-background-tertiary) !important;
+    margin-right: 4px !important;
+    border-radius: 8px !important;
+}
+
+.k-item.k-state-default.k-state-hover{
+    background: var(--sf-background-quaternary) !important;
+}
+
+.k-item span{
+    color: var(--sf-foreground) !important;
+}
+
+.k-item.k-state-active span{
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-accent) !important;
+}
+
+.k-content{
+    background: var(--sf-background) !important;
+    color: var(--sf-foreground) !important;
+}
+
+.ng-scope{
+    background: var(--sf-background);
+}
+
+.k-toolbar{
+    background: var(--sf-background-tertiary);
+    border: none !important;
+    border-radius: 8px 8px 0 0;
+    padding: 16px; /* Increase padding */
+}
+
+.k-toolbar div{
+    color: var(--sf-foreground) !important;
+}
+
+.k-grid-header tr th{
+    background: var(--sf-background-tertiary);
+    color: var(--sf-foreground);
+    border: none !important;
+    padding: 16px !important;
+}
+
+.k-grid{
+    background: var(--sf-background-tertiary);
+    border: none;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.k-grid table td{
+    background: var(--sf-background-secondary);
+    color: var(--sf-foreground);
+}
+
+.k-grid table tr td{
+    border-left: none;
+    border-top: 1px solid var(--sf-border);
+    padding: 16px;
+}
+
+/*.k-grid table tr:nth-child(even){
+    background: var(--sf-background-tertiary);
+    color: var(--sf-foreground);
+}*/
+
+tr.k-footer-template td{
+    background: var(--sf-background-secondary) !important;
+    color: var(--sf-foreground);
+    border: none;
+}
+
+.k-grid-pager{
+    background: var(--sf-background-tertiary);
+    color: var(--sf-foreground);
+    border: none;
+}
+
+/* Buttons */
+
+a.k-button.secondary-button.k-button-icontext{
+    border: none;
+    color: var(--sf-accent) !important;
+    background: var(--sf-background-quaternary);
+}
+
+a.k-pager-nav{
+    border: none !important;
+    background: var(--sf-background-quaternary);
+}
+
+ul.k-pager-numbers li span{
+    border: none !important;
+    background: var(--sf-background-quaternary) !important;
+}
+
+div.search_image{
+    display: none;
+}
+
+div.search_bg_med div{
+    background: var(--sf-background-tertiary)
+}
+
+.k-input{
+    appearance: none !important;
+    outline: none;
+    border: 1px solid var(--sf-border) !important;
+    border-radius: 4px;
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+}
+
+.k-multiselect-wrap{
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+    border: 1px solid var(--sf-border) !important;
+}
+
+.k-multiselect{
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+    border: 1px solid var(--sf-border) !important;
+}
+
+.k-calendar-container{
+    border: 1px solid var(--sf-border) !important;
+}
+
+.k-calendar table thead tr th{
+    background: var(--sf-background-quaternary) !important;
+}
+
+.k-calendar div {
+    background: var(--sf-background-quaternary) !important;
+}
+
+.k-calendar div a {
+    background: var(--sf-background-quaternary) !important;
+}
+
+.k-input span{
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+    overflow: hidden !important;
+    border: 1px solid var(--sf-border) !important;
+}
+
+.k-input span span.k-select{
+    padding-top: 4px;
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+}
+
+.k-datepicker span{
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+    overflow: hidden !important;
+    border: 1px solid var(--sf-border) !important;
+}
+
+.k-datepicker span span.k-select{
+    padding-top: 4px;
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+}
+
+tr.back_color{
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+}
+
+.k-group-header{
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+}
+
+.k-group{
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+}
+
+input{
+    padding: 4px;
+    appearance: none !important;
+    outline: none;
+    border: 1px solid var(--sf-border) !important;
+    border-radius: 4px;
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+}
+
+select{
+    padding: 4px;
+    outline: none;
+    border: 1px solid var(--sf-border) !important;
+    appearance: none !important;
+    border-radius: 4px;
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+}
+
+input.search_txt{
+    width: 84%;
+}
+
+input:focus{
+    border: 1px solid var(--sf-accent) !important;
+}
+
+textarea{
+    padding: 4px;
+    appearance: none;
+    outline: none;
+    background: var(--sf-background-quaternary);
+    border: 1px solid var(--sf-border) !important;
+    color: var(--sf-foreground);
+    border-radius: 4px;
+}
+
+textarea:focus{
+    border: 1px solid var(--sf-accent) !important;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    background: transparent !important;
+    border: none !important;
+    position: relative;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 0;
+    left: 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+input[type=checkbox]:checked:before {
+    background-color: var(--sf-accent);
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+.k-dropdown span{
+    background: var(--sf-background-quaternary) !important;
+    color: var(--sf-foreground) !important;
+    border: none !important;
+}
+
+.k-dropdown{
+    background: var(--sf-background-quaternary) !important;
+}
+
+.k-list-container{
+    background: var(--sf-background-quaternary) !important;
+    border: none !important;
+}
+
+.k-popup{
+    background: var(--sf-background-tertiary);
+    color: var(--sf-foreground);
+}
+
+li.k-item.k-state-default.k-state-hover span{
+    background: var(--sf-background-quaternary);
+}
+
+.k-list-container div ul li{
+    background: var(--sf-background-quaternary) !important;
+    border: none !important;
+    color: var(--sf-foreground) !important;
+}
+
+.hoverShowContainer1{
+    border: none !important;
+    background: var(--sf-background-tertiary) !important;
+    border-radius 8px !important;
+}
+
+.financialView{
+    border-radius: 4px;
+    background: white;
+    color: black;
+}
+
+.k-window{
+    background: var(--sf-border);
+}
+
+.k-window .k-window-titlebar{
+    background: var(--sf-background-tertiary) !important;
+    border-bottom: 1px solid var(--sf-border);
+    color: var(--sf-foreground);
+}
+
+.k-window .k-window-content{
+    background: var(--sf-background-secondary) !important;
+    color: var(--sf-foreground) !important;
+}
+
+.k-editable-area .k-content{
+    background: #FFF !important;
+}
+
+.create dl div{
+    color: var(--sf-foreground) !important;
+}
+
+.creditmemo_colspan, .estimate_colspan, .invoice_colspan, .materialorder_colspan, .workorder_colspan {
+    background-color:#13334b;
+    border-radius: 8px;
+}
+
+#add_item_cont{
+    background: var(--sf-background-quaternary);
+    border-radius: 8px;
+}
+
+#markup-cancel-btn{
+    filter: brightness(100);
+}
+
+#markupSlider{
+    padding: 2px !important;
+    background: #444 !important;
+}
+}
+
+@-moz-document domain("app.jobnimbus.com") {
+/* Dark mode */
+body{
+    background: #000;
+}
+
+#searchbar-input{
+    color: #FFF;
+}
+
+.nvb-MuiFormControl-root.nvb-MuiTextField-root.nvb-MuiFormControl-marginDense.nvb-MuiFormControl-fullWidth{
+    background: #FFFFFF22;
+    border-radius: 8px
+}
+
+.nvb-MuiFormControl-root.nvb-MuiTextField-root.nvb-MuiFormControl-marginDense.nvb-MuiFormControl-fullWidth div svg{
+    fill: #FFFFFF77;
+}
+
+/* Navbar UI enhancements */
+
+/* Navbar button hover states */
+
+button.nvb-MuiButtonBase-root{
+    color: #FFF;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+button.nvb-MuiButtonBase-root span span img{
+    filter: brightness(100);
+}
+
+button.nvb-MuiButtonBase-root span img{
+    filter: brightness(100);
+}
+
+button.nvb-MuiButtonBase-root span span div{
+    filter: brightness(100);
+}
+
+button.nvb-MuiButtonBase-root img{
+    filter: contrast(0) brightness(100);
+}
+
+button.nvb-MuiButtonBase-root span span div svg g g{
+    transform: none !important;
+}
+
+.nvb-MuiToolbar-gutters button.nvb-MuiButtonBase-root:hover{
+    transform: scale(1.05);
+    background: transparent;
+}
+
+/* Floating glass navbar style */
+
+.nvb-MuiPaper-elevation4{
+    box-shadow: none;
+    border-bottom: 1px solid #222;
+    border-left: none;
+    background: #11111177;
+    position: fixed !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: calc(100vw - 8px);
+    left: 0;
+}
+
+#test div{
+    border: 3px solid rgb(21, 101, 192);
+}
+
+#web1{
+    height: 100vh !important;
+}
+
+.board.flex-direction-column.ng-star-inserted{
+    padding-top: 56px;
+    height: 100vh !important;
+    max-height: 100vh !important;
+}
+
+@media only screen and (max-width: 952px) {
+    .board.flex-direction-column.ng-star-inserted{
+        padding-top: 119px;
+    }
+}
+}
+
+#hubspot-messages-iframe-container{
+    display: none !important;
+}
