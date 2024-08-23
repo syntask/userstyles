@@ -1,0 +1,6 @@
+/* Removes the blurry background that YouTube applies to the video player. */
+/* URLs on the domain: www.youtube.com */
+
+#cinematics-container{
+    display: none !important;
+}
